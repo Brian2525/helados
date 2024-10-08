@@ -1,0 +1,16 @@
+
+
+<h2>Registro Diario para Todos los Productos</h2>
+<form method="post">
+    {% csrf_token %}
+    
+    <div>
+        <!-- Campo para seleccionar la fecha -->
+        
+    </div>
+
+    <!-- Campos dinámicos generados para cada producto -->
+    {{ form.as_p }}
+    
+    <button type="submit">Registrar</button>
+</form>

@@ -1,0 +1,23 @@
+<h2>Resumen de Ventas Totales</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Piezas Vendidas</th>
+            <th>Total Ventas</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for registro in registros %}
+        <tr>
+            <td>{{ registro.producto.nombre }}</td>
+            <td>{{ registro.calcular_piezas_vendidas }}</td>
+            <td>${{ registro.calcular_total_ventas }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="2"><strong>Venta Total de Todos los Productos:</strong></td>
+            <td><strong>${{ venta_total }}</strong></td>
+        </tr>
+    </tbody>
+</table>

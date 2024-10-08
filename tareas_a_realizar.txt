@@ -1,0 +1,90 @@
+
+
+Productos - Listo 
+
+Crear un proyecto donde solo van a agregar los productos 
+Cada producto se compone de nombre y precio  - Crear modelo 
+Como los productos se van a dar de alta desde el panel admin no es necesario crear un crud ni html para el sistema especificamente para agregar nuevo producto. 
+Los productos que se van a agregar son : Dorado, cono oreo, cono cajeta, cono doble, Mega cono, sundae, copa fiesta 
+los productos deben pertener a categorias: Helados, Paletas, Bolsas de Helado, 
+
+
+Personal - Listo 
+
+
+Se debe crear una app donde se den de alta los empleados - Crear una app llamada empleados
+Se debe crear un formulario para dar de alta un nuevo empleado - Datos del personal : Nombre de personal, fecha de nacimiento, sueldo, datos de transferencia. 
+(turno sab-dom o lun-viernes)
+Como los productos se van a dar de alta desde el panel admin no es necesario crear un crud ni html para el sistema especificamente para agregar nuevo personal  
+
+
+Sucursales  - Listo 
+Crear un modelo para agregar una nueva sucursal-  crear un modelo con nombre de sucursal, direccion, 
+Como los productos se van a dar de alta desde el panel admin no es necesario crear un crud ni html para el sistema especificamente para agregar nueva sucursal. 
+
+
+
+Registro
+
+Este especificamente es el formulario que se llena diario.
+El formulario debe poder seleccionar el usuario dependiendo del inicio de sesion 
+El formulario debe permitir al personal seleccionar la sucursal deseada. 
+Se debe poner la fecha de manera automatica 
+Debe haber un numero de folio 
+
+Genera un modelo de registro de ventas  donde
+se puede seleccionar Personal de sucursal (seleccionar del modelo de personal)
+se puede seleccionar Sucursal (seleccionar del modelo de Sucursal)
+Fecha del dia de hoy de manera automática
+Y para cada Producto (seleccionado del modelo Producto que tiene nombre y precio) se debe calcular para cada producto la venta del dia. 
+Indicada por la siguiente ecuacion=  (inventario inicial +  llego mercancia) -( mercancia defectuosa + mercancia sobró)= piezas vendidas * Precio de venta (Obtenido de cada producto)
+
+Para cada producto debe tener un input de Existencia, llego, rotos, sobró y debe calcular automaticamente las piezas venta y la venta $$. 
+Para el registro si es necesario que se genere un CRUD con html para que cada personal llene sus registros diarios. 
+
+
+
+También debe tener un campo de observaciones al final del dia. 
+Debe tener un campo de gastos hechos en el dia 
+
+El sistema calcula y muestra  cuanto debe entregar el personal
+El usuario indica cuánto está entregando 
+El sistema muestra la diferencia (si Entrego es mayor a debe entrega entonces sobro dinero, si debe entrega es mayor a entrego entonces falto dinero)
+El sistema muestra la diferencia y al dar click en aceptar se realiza el calculo de manera automática. 
+
+
+
+#Suma (existencia_dia anterior + Llego) - (rotos + Sobro) = piezas venta *Precio de venta = Venta $
+
+
+
+En cada sucursal se lleva acabo el registro diario de venta 
+Cada venta diaria se compone de un inventario inicial 
+
+
+Inventario
+
+Se debe poder actualizar un inventario inicial 
+El sistema va sumando todos los ingresos de cada dia de los registros 
+El sistema va sumando todos los barquillos rotos que hay dia a dia. 
+
+Se debe poder hacer un corte 
+
+
+
+Reportes 
+
+Crear un dashboard donde se va a visualizar el resumen de las ventas 
+El sistema manda un correo con el reporte diario de las ventas de cada sucursal. 
+El sistema va sumando el monto de venta de cada producto
+
+
+Suma la venta por producto por dia. 
+Suma la venta por totales de ventas de todos los dias. 
+
+
+
+
+
+
+Crear un POS para que registren cada venta 
